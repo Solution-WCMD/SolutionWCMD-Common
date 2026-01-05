@@ -15,7 +15,7 @@ You can install `Solution.Common` via Unity's Package Manager using a Git URL.
 3. Paste (replace `v1.0.0` with the desired release tag):
 
 ```
-https://github.com/Solution-WCMD/SolutionWCMD-Common.git#1.0.0
+https://github.com/Solution-WCMD/SolutionWCMD-Common.git#v1.0.0
 ```
 
 4. You can find all available versions on the [Releases page](https://github.com/Solution-WCMD/SolutionWCMD-Common/releases).
