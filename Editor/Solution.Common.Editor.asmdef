@@ -2,7 +2,7 @@
     "name": "Solution.Common.Editor",
     "rootNamespace": "Solution.Common.Editor",
     "references": [
-        "GUID:2c56111c7d47ea64b8b0400a64dbd0b0"
+        "GUID:2d3d510bfe7088bbfa35d5e871e6aabc"
     ],
     "includePlatforms": [],
     "excludePlatforms": [
