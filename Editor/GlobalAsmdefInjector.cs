@@ -165,7 +165,7 @@ namespace Solution.Common.Editor {
         // Adds the common GUID reference if not already present.
         private static string[] AddCommonGuid(string[] sortedReferences) {
             string guidReference = "GUID:" + CommonAssemblyGuid;
-            if (sortedReferences.Contains(guidReference)) {
+            if (sortedReferences.Contains(guidReference) || sortedReferences.Contains(CommonAssemblyName)) {
                 return null;
             }
             string[] combined = sortedReferences.Concat(new[] { guidReference }).Distinct().ToArray();
