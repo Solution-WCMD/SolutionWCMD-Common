@@ -138,6 +138,10 @@ namespace Solution.Common.Editor {
 
         // Gets the path of an assembly definition by its name.
         private static string GetPathByName(string reference) {
+            if (reference == CommonAssemblyName) {                                                                                                                                                                         
+                return CommonAssemblyPath;                                                                                                                                                                                 
+            } 
+    
             return CachedAssemblyPaths.Where(path => path.EndsWith(reference + ".asmdef")).FirstOrDefault();
         }
 
