@@ -120,7 +120,9 @@ namespace Solution.Common.Editor {
         private static string[] PrepareReferences(string[] existingReferences) {
             string[] references = existingReferences ?? new string[0];
             if (!references.Any(reference => reference.StartsWith("GUID:"))) {
-                references = references.Select(ConvertNameReferenceToGuid).ToArray();
+                references = references.Select(reference =>                                                                                                                                                                
+                    reference == CommonAssemblyName ? reference : ConvertNameReferenceToGuid(reference)                                                                                                                    
+                ).ToArray(); 
             }
             return references;
         }
